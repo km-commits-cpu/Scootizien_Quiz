@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffd900" />
+  <meta name="description" content="What Scootizien are you? An original work-interest quiz to explore six careers at Scoot." />
+  <title>Which Scootizien are you? · Explore Scoot Careers</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page-shell">
+  <header class="topbar">
+    <a class="brand" href="#home" id="home-logo" aria-label="Scootizien quiz home"><img class="brand-logo" src="assets/scoot-official-logo.png" alt="Scoot official logo" /><span class="brand-rule"></span><span class="brand-note">CAREER DISCOVERY<br>LAB</span></a>
+    <div class="topbar-right"><span class="flag">STUDENT CAMPAIGN CONCEPT</span><span class="step-label" id="header-state">READY TO BOARD</span></div>
+  </header>
+
+  <main>
+    <section class="screen active" id="screen-home" aria-labelledby="home-title">
+      <div class="hero">
+        <div class="hero-left">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR CAREER JOURNEY STARTS HERE</div>
+          <h1 id="home-title">Which <span class="swash">Scootizien</span><br>are you<span class="question-mark">?</span></h1>
+          <p class="hero-copy">Six careers. One airline. A whole lot of possibilities. Discover the Scoot role whose day-to-day work interests you most.</p>
+          <div class="hero-tags"><span>18 short questions</span><span>6 Scoot careers</span><span>About 3–4 minutes</span></div>
+          <button class="btn btn-primary" id="start-btn" type="button">LET'S FIND OUT <span aria-hidden="true">↗</span></button>
+          <div class="hero-footnote">For career exploration, not employment selection or eligibility.</div>
+        </div>
+        <div class="hero-right" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="route-dots">· · · · · ·</div>
+          <svg class="hero-plane" viewBox="0 0 410 300" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M48 195c75-39 153-52 276-132" stroke="#171717" stroke-width="5" stroke-linecap="round" stroke-dasharray="8 16"/><g transform="translate(229 65) rotate(-28 90 90)"><path d="M3 135 76 91 155 13c15-15 35-13 40-7 6 7 1 22-9 31L122 114 171 185l-16 15-81-49-42 22 7 27-12 11-25-34-38-7 13-12 26-23Z" fill="#171717"/><path d="m72 137 46-37" stroke="#FFDE28" stroke-width="7" stroke-linecap="round"/></g></svg>
+          <div class="hero-ticket"><span>YOUR NEXT STOP</span><b>THE SKY'S<br>NOT THE LIMIT.</b><span>✦ EXPLORE ✦ DISCOVER ✦ GO</span></div>
+        </div>
+      </div>
+      <div class="home-bottom">
+        <div class="note-block"><span class="small-index">01 / HOW IT WORKS</span><h2>It's about what you <em>enjoy.</em></h2><p>Imagine you've been trained to try each work activity. Rate how much you'd enjoy doing it. You'll get one main role to explore, along with another career if your interests overlap.</p></div>
+        <div class="qr-block"><img src="assets/scootizien-qr.png" alt="QR code to the public Scootizien quiz URL" /><div><span class="small-index">02 / SCAN & PLAY</span><h3>Take it on your phone.</h3><p>Share the public quiz link at your recruitment booth.</p><a href="assets/scootizien-qr.png" download="scootizien-quiz-qr.png">Download QR code ↗</a></div></div>
+      </div>
+      <details class="evidence-details"><summary>What's the reasoning behind the quiz? <span>+</span></summary><div class="details-body"><p>Our original questions are <b>informed by Holland's RIASEC theory of work interests</b> and linked to responsibilities from the Scoot role descriptions supplied to the project team. We select <b>three questions per career</b> to keep the quiz balanced.</p><p>Responses indicate interest in the sampled activities; they do <b>not</b> measure ability, predict job performance or provide validated suitability percentages. Role-to-interest mappings and questions still require review by Scoot employees.</p><p><a href="https://www.onetcenter.org/reports/IP_Manual.html" target="_blank" rel="noopener noreferrer">O*NET Interest Profiler research ↗</a> · <a href="https://careers.flyscoot.com/" target="_blank" rel="noopener noreferrer">Scoot Careers ↗</a></p></div></details>
+    </section>
+
+    <section class="screen" id="screen-quiz" aria-labelledby="quiz-title">
+      <div class="quiz-top"><span class="eyebrow"><span class="eyebrow-dot"></span> FIND YOUR DIRECTION</span><span class="question-counter" id="question-count">QUESTION 01 / 18</span></div>
+      <div class="progress-track" role="progressbar" id="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="18" aria-valuenow="0"><div class="progress-fill" id="progress-fill"></div></div>
+      <div class="question-card">
+        <div class="question-illustration" aria-hidden="true"><span class="superscript">SCOOT / WORK INTERESTS</span><div class="asterisk">✳</div><svg viewBox="0 0 90 90"><path d="M10 69C32 69 46 40 77 18" stroke="currentColor" stroke-width="3" stroke-dasharray="4 6"/><path d="m59 13 21 2-9 19-3-11Z" fill="currentColor"/></svg></div>
+        <div class="question-main"><span class="question-kicker">IMAGINE YOU HAD THE TRAINING...</span><h2 id="quiz-title">How much would you enjoy...</h2><p id="question-text">Loading your question…</p><div class="answer-options" id="answer-options" role="radiogroup" aria-label="Enjoyment scale"></div><div class="keyboard-tip">Tip: Press keys <b>1–5</b> to answer quickly.</div></div>
+      </div>
+      <div class="quiz-actions"><button class="btn btn-secondary" id="back-btn" type="button">← BACK</button><button class="btn btn-primary" id="next-btn" type="button" disabled>NEXT QUESTION →</button></div>
+    </section>
+
+    <section class="screen" id="screen-tie" aria-labelledby="tie-title"><div class="tie-panel"><span class="eyebrow"><span class="eyebrow-dot"></span> YOU'VE GOT OPTIONS</span><h2 id="tie-title">Two career paths are calling.</h2><p>You rated some careers equally highly. Which of these real-world activities would you be most excited to try? Your choice will decide the main character on your result page.</p><div id="tie-options" class="tie-options"></div><button class="btn btn-secondary" id="tie-back" type="button">← REVIEW LAST ANSWER</button></div></section>
+
+    <section class="screen" id="screen-results" aria-labelledby="result-title">
+      <div class="result-top"><span class="eyebrow"><span class="eyebrow-dot"></span> YOUR SCOOTIZIEN HAS LANDED</span><span class="stamp">CAREER DISCOVERY RESULT ✦</span></div>
+      <div class="result-grid"><div class="result-art"><img id="result-image" src="" alt="Scoot career mascot" /><div class="result-mascot"><span>YOUR SCOOTIZIEN</span><strong id="result-mascot">OWL</strong></div></div><div class="result-copy"><span class="result-overline">YOUR TOP CAREER TO EXPLORE</span><h2 id="result-title">Flight Dispatcher</h2><div id="result-nickname" class="result-nickname">The Flight Planner</div><p id="result-summary" class="result-summary"></p><h3>What does this role involve?</h3><p id="result-about"></p><h3>Why did I get this result?</h3><p id="result-why"></p><div id="result-score" class="result-score"></div></div></div>
+      <div class="result-secondary"><div class="alternative-layout"><img id="alternative-image" class="alternative-character" src="" alt="Alternative Scootizen career character" loading="lazy" /><div><span class="small-index">ANOTHER ROLE TO EXPLORE</span><h3 id="alternative-title">Operations Controller</h3><p id="alternative-copy"></p></div></div><div class="result-tip"><span class="small-index">ASK THE SCOOT TEAM</span><p id="result-tip"></p></div></div>
+      <section class="scootizen-roster" aria-labelledby="scootizen-roster-title"><div class="roster-heading"><div><span class="small-index">THE PEOPLE BEHIND EVERY FLIGHT</span><h3 id="scootizen-roster-title">Meet the Scootizens</h3></div><p>Every role has its own strengths. Here's the full career character collection.</p></div><div id="scootizen-roster-grid" class="scootizen-roster-grid"></div></section>
+      <details class="scores-details"><summary>See all six interest scores and how we calculated them <span>+</span></summary><div id="all-scores"></div><p>Each career's interest score = average of three responses (1–5). Similar scores are normal because jobs share work activities. Scores aren't likelihoods or job-suitability percentages.</p><p>Questions draw from supplied Scoot role descriptions and a RIASEC-informed approach; they are not an official O*NET test and have not been validated by Scoot.</p></details>
+      <div class="career-cta"><div><h3>Curious what happens next?</h3><p>Explore official Scoot vacancies and internships. Your interests can point you to a story worth discovering.</p></div><a class="btn btn-dark" href="https://careers.flyscoot.com/" target="_blank" rel="noopener noreferrer">EXPLORE SCOOT CAREERS ↗</a></div>
+      <div class="result-actions"><button class="btn btn-primary" id="retake-btn" type="button">TAKE IT AGAIN <span class="small-btn-text">(FROM Q11)</span> ↻</button><button class="btn btn-secondary" id="restart-btn" type="button">RESTART FROM THE BEGINNING ↩</button><button class="btn btn-secondary" id="copy-btn" type="button">COPY MY RESULT ↗</button></div>
+      <p class="disclaimer"><strong>Important:</strong> This is a fun career-awareness activity, not a validated psychological assessment or a tool for deciding job eligibility. All roles require their own qualifications, training and selection processes. The questions and role mappings are student-proposed and require Scoot verification.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><span>WHAT SCOOTIZIEN ARE YOU? · STUDENT-PROPOSED CAMPAIGN</span><span>EXPLORE THE PEOPLE BEHIND EACH FLIGHT <span aria-hidden="true">✈</span></span></footer>
+</div>
+<script src="quiz-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
